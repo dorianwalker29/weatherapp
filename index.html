@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather APP</title>
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Weather APP</h1>
+		<div class="search-container">
+			<input type="text" placeholder="Enter a city name" id="search-bar">
+			<button onclick="searchWeather()">Search</button>
+		</div>
+		<div class="weather-container">
+            <div class="current-weather">
+              <h2 id="city-name"></h2>
+              <div id="current-icon"></div>
+              <div id="current-temp"></div>
+              <div id="current-description"></div>
+            </div>
+			<div class="forecast">
+                <div id="day-1"></div>
+                <div id="icon-1"></div>
+                <div id="temp-1"></div>
+                <div id="description-1"></div>
+            </div>
+			<div class="forecast">
+                <div id="day-2"></div>
+                <div id="icon-2"></div>
+                <div id="temp-2"></div>
+                <div id="description-2"></div>
+            </div>
+			<div class="forecast">
+                <div id="day-3"></div>
+                <div id="icon-3"></div>
+                <div id="temp-3"></div>
+                <div id="description-3"></div>
+            </div>
+			<div class="forecast">
+                <div id="day-4"></div>
+                <div id="icon-4"></div>
+                <div id="temp-4"></div>
+                <div id="description-4"></div>
+            </div>
+			<div class="forecast">
+                <div id="day-5"></div>
+                <div id="icon-5"></div>
+                <div id="temp-5"></div>
+                <div id="description-5"></div>
+            </div>
+		</div>
+        <div class="search-history">
+            <h3>Search History</h3>
+            <ul id="history-list"></ul>
+        </div>
+        <div class="clear-history">
+            <button onclick="clearHistory()">Clear History</button>
+        </div>
+	</div>
+
+	<script src="./assets/script.js"></script>
+</body>
+</html>
